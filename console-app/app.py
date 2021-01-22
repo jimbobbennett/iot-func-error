@@ -1,0 +1,1 @@
+from azure.iot.hub import IoTHubRegistryManager

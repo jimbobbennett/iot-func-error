@@ -55,6 +55,8 @@
     func start
     ```
 
+You can find the source for this in the `function-app` folder.
+
 ## Expected
 
 * The functions host should start pretty quickly and host the HTTP trigger
@@ -102,3 +104,9 @@
     [2021-01-22T00:04:13.015Z]     from uamqp import c_uamqp  # pylint: disable=import-self
     [2021-01-22T00:04:13.015Z] .
     ```
+
+    if you use any of the methods in the import, you get the same errors and the method call fails.
+
+* This works fine on Widows
+* I can't test on Intel Mac as mine is having it's keyboard fixed - will update with results soon
+* Outside of an Azure Functions app, the library works with no errors. See the `app.py` file in the `console-app` directory. It uses the same library and same import, but no errors.
